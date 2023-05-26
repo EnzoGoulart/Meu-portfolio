@@ -1,0 +1,214 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-family: cursive;
+}
+body{
+    height: 100vh;
+    background-image: url('Estrelas.jpg');
+    background-size: 110%;
+    animation: bckEst 22s ease-in-out infinite alternate;
+    transition: background-image 2s;
+}
+@keyframes bckEst {
+    0%{
+        background-position: 0%;
+    }
+}
+h1{
+    font-size: 30px;
+    padding-top: 110px;
+    text-align: center;
+    color: white;
+}
+#botaoInicial{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 35px;
+    margin: 60px 0px;
+    background-color: rgb(119, 34, 197);
+    border: 7px solid rgb(0, 17, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+#botaoInicial:hover{
+    background-color: rgb(120, 38, 197);
+    border: 7px solid rgb(12, 0, 187);
+    transition: 1s;
+}
+#botaoInicial:active{
+    background-color: rgb(102, 32, 168);
+    border: 7px solid rgb(8, 0, 128);
+    transition: 1s;
+}
+@keyframes sumirH1 {
+    from{
+        opacity: 1;
+        font-size: 30px;
+    }
+    to{
+        opacity: 0;
+        font-size: 1px;
+    }
+}
+@keyframes sumirBotao1 {
+    from{
+        opacity: 1;
+        font-size: 25px;
+        padding: 20px;
+    }
+    to{
+        opacity: 0;
+        font-size: 1px;
+        padding: 0px;
+    }
+}
+#pagina2{
+    display: none;
+    color: white;
+    animation: openpage2 1.5s ease-in-out 1 forwards;
+}
+@keyframes openpage2 {
+    0%{
+        top: 45%;
+        opacity: 0;          
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        top: 0%;
+        opacity: 1;
+    }
+}
+#divA{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 80%;
+}
+.icon{
+    width: 35px;
+}
+.icon:hover{
+    transform: scale(1.2) translate(0px, -3px);
+    transition: transform .4s;
+}
+#h12{
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    padding: 30px 0px;
+    border-bottom: 0.4px solid rgba(56, 9, 187, 0.63);
+    width: 60%;
+}
+
+#txt0{
+    padding-top: 30px;
+    text-indent: 50px;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+
+#pProjetos, #pCurriculo, #pSobre{
+    font-size: 25px;
+    padding: 20px 0px;
+    border-bottom: 0.4px solid rgba(56, 9, 187, 0.63);
+    width: 45%;
+    text-align: center;
+    margin: auto;
+}
+#pProjetos{
+    margin: 30px auto;
+}
+#pImagens1{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    columns: 2;
+    margin: auto;
+}
+.npva{
+    height: 140px;
+    width: 140px;
+    border: 1px solid rgba(56, 9, 187, 0.63);
+    cursor: pointer;
+}
+#curriculo{
+    border: 4px solid rgba(56, 9, 187, 0.63);
+    border-radius: 30px;
+    margin: 30px auto;
+    width: 92%;
+}
+.txt1{
+    padding-left: 20px;
+    font-size: 22px;
+    color: rgb(143, 119, 209);
+    padding: 10px;
+}
+.txt2{
+    padding-left: 40px;
+    color: rgb(234, 225, 255);
+}
+.txt3{
+    padding-left: 60px;
+    color: rgb(171, 171, 255);
+}
+.txt1,.txt2,.txt3{
+    padding-bottom: 3px;
+}
+#pUlts{
+    padding-bottom: 20px;
+}
+@media screen and (width > 407px) {
+    .npva{
+        height: 160px;
+        width: 160px;
+        border: 1px solid rgba(56, 9, 187, 0.63);
+        cursor: pointer;
+    }
+}
+@media screen and (width > 478px) {
+    .npva{
+        height: 200px;
+        width: 200px;
+        border: 1px solid rgba(56, 9, 187, 0.63);
+        cursor: pointer;
+    }
+    #pProjetos, #pCurriculo, #pSobre{
+        font-size: 33px;
+        padding: 20px 0px;
+        border-bottom: 0.4px solid rgba(56, 9, 187, 0.63);
+        width: 45%;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media screen and (width > 604px) {
+    .npva{
+        height: 250px;
+        width: 250px;
+        border: 1px solid rgba(56, 9, 187, 0.63);
+        cursor: pointer;
+    }
+    #curriculo{
+        border: 4px solid rgba(56, 9, 187, 0.63);
+        border-radius: 30px;
+        margin: 30px auto;
+        width: 60%;
+        padding-left: 30px;
+    }
+}
+@media screen and (width > 767px) {
+    .npva{
+        height: 180px;
+        width: 180px;
+        border: 1px solid rgba(56, 9, 187, 0.63);
+        cursor: pointer;
+    }
+}
