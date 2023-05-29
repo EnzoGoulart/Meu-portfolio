@@ -126,18 +126,24 @@ h1{
     margin: auto;
 }
 #pProjetos{
-    margin: 30px auto;
+    margin: 30px auto 30px auto;
 }
 #pImagens1{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px auto;
+    margin: 40px auto 10px auto;
     width: 80%;
 }
+.img{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
 .npva{
-    height: 100px;
-    width: 100px;
+    height: 85px;
+    width: 85px;
     border: 1px solid rgba(56, 9, 187, 0.63);
     cursor: pointer;
     margin: -3px auto;
@@ -170,23 +176,7 @@ h1{
 #pUlts{
     padding-bottom: 20px;
 }
-@media screen and (width > 370px) {
-    .npva{
-        height: 110px;
-        width: 110px;
-        border: 1px solid rgba(56, 9, 187, 0.63);
-        cursor: pointer;
-        margin: -3px auto;
-    }
-    #pImagens1{
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px auto;
-        width: 100%;
-    }
-}
-@media screen and (width > 407px) {
+@media screen and (width>376px){
     .npva{
         height: 100px;
         width: 100px;
@@ -194,23 +184,10 @@ h1{
         cursor: pointer;
         margin: -3px auto;
     }
-    #pImagens1{
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px auto;
-        width: 80%;
-    }
 }
 @media screen and (width > 478px) {
-    .npva{
-        height: 200px;
-        width: 200px;
-        border: 1px solid rgba(56, 9, 187, 0.63);
-        cursor: pointer;
-    }
     #pProjetos, #pCurriculo, #pSobre{
-        font-size: 33px;
+        font-size: 22px;
         padding: 20px 0px;
         border-bottom: 0.4px solid rgba(56, 9, 187, 0.63);
         width: 45%;
@@ -219,12 +196,6 @@ h1{
     }
 }
 @media screen and (width > 604px) {
-    .npva{
-        height: 250px;
-        width: 250px;
-        border: 1px solid rgba(56, 9, 187, 0.63);
-        cursor: pointer;
-    }
     #curriculo{
         border: 4px solid rgba(56, 9, 187, 0.63);
         border-radius: 30px;
@@ -232,45 +203,37 @@ h1{
         width: 60%;
         padding-left: 30px;
     }
-}
-@media screen and (width > 767px) {
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
     .npva{
-        height: 180px;
-        width: 180px;
+        height: 155px;
+        width: 155px;
         border: 1px solid rgba(56, 9, 187, 0.63);
         cursor: pointer;
+        margin: -3px auto;
     }
 }
+
 @media screen and (width > 1000px) {
     .icon{
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
     #h12, #pProjetos, #pSobre, #pCurriculo{
-        font-size: 60px;
-    }
-    .npva{
-        height: 180px;
-        width: 180px;
-        border: 1px solid rgba(56, 9, 187, 0.63);
-        cursor: pointer;
+        font-size: 37px;
     }
     #txt0{
-        font-size: 33px;
+        font-size: 22px;
     }
-    .txt1{
-        font-size: 40px;
+    #txt1{
+        font-size: 25px;
     }
-    .txt2{
-        font-size: 36px;
+    #txt2{
+        font-size: 23px;
     }
-    .txt3{
-        font-size: 33px;
-    }
-    .npva{
-        height: 220px;
-        width: 220px;
-        border: 1px solid rgba(56, 9, 187, 0.63);
-        cursor: pointer;
+    #txt3{
+        font-size: 22px;
     }
 }
